@@ -1,90 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <link rel="shortcut icon" href="data/images/favicon.ico" type="imgage/vn.microsoft.icon">
-        <title>Liên Hệ</title>
-        
-    </head>
-<body> 
-    <header>
-        <a href="trangchu.html">
-            <img src="data/images/logo.png" alt="" id="logo">
-        </a>
-        <nav>
-            <a target="_self" href="Trangchu.html">Trang Chủ</a>
-            <a target="_self" href="Gioithieu.html">Giới Thiệu</a>
-            <a target="_self" href="Sanpham.html">Sản Phẩm</a>
-            <a target="_self" href="Tintuc.html">Tin Tức</a>
-            <a target="_self" href="Dangnhap.html">Đăng Nhập</a>
-            <a target="_self" href="Dangky.html">Đăng Ký</a>
-            <a target="_self" href="Lienhe.html">Liên Hệ</a>
-        </nav>
-        <main>
-            <article>
-                <h1>Liên hệ</h1>
-                <img src="data/images/lienhe/check-in.png">
-                <h2>Địa chỉ: 0123, Tòa Nhà ABC, TP. Cần Thơ</h2>
-                <p>Nếu bạn có góp ý, vui lòng liên hệ bằng thư điện tử hoặc sử dụng biểu mẫu bên dưới.</p>
-                <p>Xin cám ơn.</p>
-            </article>
-        <main>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" type="image/png" href="data/images/favicon.ico"/>
+    <title>Liên hệ</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="fontawesome-free-6.0.0-beta2-web/css/all.min.css" />
+  
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/574a825c20.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="Lienhe.css">
+</head>
+
+<body>
+    <img src="data/images/header-img1.png" alt="html" class="header1" height="100px">
+    <img src="data/images/header-img2.png" alt="html" class="header2" height="70px">
+    <img src="data/images/header-img3.png" alt="html" class="header3" height="80px">
+<header>
+    <img src="data/images/logo.png" alt="html" class="logo">
+    <div class="nav-1">
+        <a  class="nav-1" href="Trangchu.html">Trang Chủ</a> 
+        <a   class="nav-1" href="Gioithieu.html">Giới Thiệu</a>
+        <a   class="nav-1" href="Sanpham.html">Sản Phẩm</a>
+        <a  class="nav-1" href="Tintuc.html">Tin Tức</a>
+        <a  class="nav-1" href="Dangnhap.html">Đăng Nhập</a>
+        <a  class="nav-1" href="Dangky.html">Đăng Ký</a>
+        <a  class="nav-1" href="Lienhe.html">Liên Hệ</a>
+    </div>
+
+   <div class="timkiem">
+       <input type="text" placeholder="Nhập nội dung cần tìm...">
+       <button class="search"><i class="fas fa-search"></i></button>
+       <button class="cart"><i class="fa-solid fa-cart-shopping"></i></button>
+       
+   </div>
+   
+</header>
+
+    <main class='contact'>
+        <article>
+            <h1>Liên hệ</h1>
+            <h2 class="diachi"><img src="/lập trình web/data/images/lienhe/check-in.png">Địa chỉ: 0123, Tòa Nhà ABC, TP. Cần Thơ</h2>
+            <p class="diachi"> Nếu bạn có góp ý, vui lòng liên hệ bằng thư điện tử hoặc sử dụng biểu mẫu bên dưới.Xin
+                cám ơn.</p>
+        </article>
         <form action="" method="POST" enctype="multipart/form-data">
             <fieldset>
-                <legend>Góp ý</legend>
+                <h1>Góp ý</h1>
                 <table>
                     <tr>
                         <td>
-                            <label for="HoTen"><b>Họ Tên:</b></label>
+                            <label for="hoten"><b><i class="fas fa-user icon"></i></b></label>
                         </td>
                         <td>
-                        <input id="hoten" type="text" placeholder="Vui lòng nhập Họ Tên của bạn">
+                            <input id="hoten" type="text" placeholder="Vui lòng nhập Họ Tên của bạn" "hoten" required>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <label for="email"><b>Email:</b></label>
+                            <label for="email"><b><i class="fas fa-envelope icon"></i></b></label>
                         </td>
                         <td>
-                        <input id="email" type="text" placeholder="Vui lòng nhập Email của bạn">
+                            <input id="email" type="text" placeholder="Vui lòng nhập địa chỉ Email" "email" required>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <label for="chude"><b>Chủ đề:</b></label>
+                            <label for="chude"><b><i class="fas fa-list icon"></i></b></label>
                         </td>
                         <td>
-                        <select id="chude" name="chude">
-                            <option value="dichvu">Về Sản Phẩm/Dịch Vụ</option>
-                            <option value="uudai">Về Ưu Đãi Thành Viên</option>
-                            <option value="tin">Về Tin Tuyển Dụng </option>
-                        </select>
+                            <select id="chude" name="chude">
+                                <option value="dichvu">Về Sản Phẩm/Dịch Vụ</option>
+                                <option value="uudai">Về Ưu Đãi Thành Viên</option>
+                                <option value="tin">Về Tin Tuyển Dụng </option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="contact-content">
+                            <label for="noidung"><b><i class="fas fa-sticky-note icon"></i></b></label>
+                            <textarea placeholder="Nội dung cần liên hệ" name="noidung" id="noidung" cols="50"
+                                rows="7"></textarea>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <label for="noidung"><b>Nội dung: </b></label>
+                            <input class=submit type="submit" value="Gửi">
                         </td>
                     </tr>
-                    <tr>
-                        <td>
-                            <textarea placeholder="Nội dung cần liên hệ" name="noidung" id="noidung" cols="50" rows="7"></textarea>
-                        </td>
-                    </tr>
-               </table>
-                    <input type="submit" value="Gửi">
+                </table>
+
             </fieldset>
         </form>
-    </header>
-
+    </main>
+    <div></div>
     <footer>
-        <span class="footer__COTY">
-            © 2021 Bản quyền thuộc về FreeezeVN.
-            <a href="" class="footer__link">facebook</a>
-            <a href="" class="footer__link">twitter</a>
-            <a href="" class="footer__link">pintesrest</a>
-            <a href="" class="#">Về Đầu Trang</a>
-        </span>
+        <p>&copy 2021 Bản quyền thuộc về FreeezeVN.
+        <a href="http://facebook.com"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+        <a href="https://www.pinterest.com/"><i class="fa-brands fa-pinterest"></i></a>
+    </p>
     </footer>
+    <div>   
+        <a href="#">
+    <img src="data/images/top.png" alt="" height="50px" class="top"></a>
+    </div>
+
 </body>
+
 </html>
